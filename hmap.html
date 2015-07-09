@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <script type="text/javascript" src="heatmap.js"></script>
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="jquery.mobile.custom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libheatmap.css">
+    <link rel="stylesheet" type="text/css" href="jquery.mobile.custom.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery.mobile.custom.theme.min.css">
+</head>
+
+<body>
+
+<div class="ui-content">
+    <div class="heatmapArea" style="width:1300px;padding:0;height:550px;cursor:pointer;position:relative;">
+        <canvas class="libmap1" width="1600" height="1080" style="position: absolute; top: -25px; left: 0px;" onclick="counter(1)">
+        </canvas>
+    </div>
+
+    <div data-role="listview" data-inset="true" class="tablist-left">
+        <div data-role="navbar">
+            <ul>
+                <li><button type="button" id="button1fl">1st floor</button></li>
+                <li><button type="button" id="button2fl">2nd floor</button></li>
+                <li><button type="button" id="button3fl">3rd floor</button></li>
+                <li><button type="button" id="button4fl">4th floor</button></li>
+                <li><button type="button" id="button5fl">5th floor</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <form method="post" action="postcoords.php">
+        <input type="hidden" value="" name="dot1fl" id="dot1fl" />
+        <input type="hidden" value="" name="dot2fl" id="dot2fl" />
+        <input type="hidden" value="" name="dot3fl" id="dot3fl" />
+        <input type="hidden" value="" name="dot4fl" id="dot4fl" />
+        <input type="hidden" value="" name="dot5fl" id="dot5fl" />
+        <input type="hidden" value="" name="pcount" id="pcount" />
+        <span>Initials:</span>
+        <div data-role="controlgroup" data-type="horizontal">
+            <input type="text" name="initials" id="initialsInput" data-wrapper-class="controlgroup-textinput ui-btn"/>
+            <input type="submit" id="allButton" value="Submit" />
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="libmap.js"></script>
+<p id="currentCount">Current Count: <span id="patcounter"></span></p>
+
+</body>
+</html>
