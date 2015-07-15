@@ -5,12 +5,12 @@
     <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="libheatmap.css">
 </head>
-<body>
+<body class="loadmapBody">
 <?php
-	$host="localhost";
-	$user="timdanna_tdannay";
-	$password="B0z0c@t1";
-	$database="timdanna_heatmap_v2";
+	$host="";
+	$user="";
+	$password="";
+	$database="";
 	mysql_connect($host,$user,$password);
 	mysql_select_db($database);
 
@@ -189,8 +189,8 @@
 
 ?>
 
-	<div class="heatmapArea" class="well" style="width:1300px;padding:0;height:480px;cursor:pointer;position:relative;">
-		<canvas class="libmap1" width="1600" height="680" style="position: absolute; top: 0px; left: 0px;"></canvas>
+	<div class="heatmapArea" class="well" style="width:1300px;padding:0;height:550px;cursor:pointer;position:relative;">
+		<canvas class="libmap1" width="1600" height="832" style="position: absolute; top: 0px; left: 0px;"></canvas>
 	</div>
 
 <div class="tableContainer">

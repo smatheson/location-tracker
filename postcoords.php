@@ -6,10 +6,10 @@
 	<h2>Your data has been submitted. Patron Count: <?php print_r($_POST[pcount]); ?></h2>
 		
 	<?php
-		$host="localhost";
-		$user="timdanna_tdannay";
-		$password="B0z0c@t1";
-		$database="timdanna_heatmap_v2";
+		$host="";
+		$user="";
+		$password="";
+		$database="";
 
 		mysql_connect($host,$user,$password);
 		mysql_select_db($database);
