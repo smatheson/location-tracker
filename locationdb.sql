@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `timdanna_heatmap_v2`
+-- Database: `locationtracker_v2`
 --
-CREATE DATABASE `timdanna_heatmap_v2` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `timdanna_heatmap_v2`;
+CREATE DATABASE `locationtracker_v2` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `locationtracker_v2`;
 
 -- --------------------------------------------------------
 
